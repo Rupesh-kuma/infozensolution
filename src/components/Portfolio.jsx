@@ -24,27 +24,28 @@ const catColors = {
 
 export default function Portfolio() {
   return (
-    <section id="portfolio" className="py-10 md:py-18 relative overflow-hidden">
+    <section id="portfolio" className="py-2 sm:py-2 md:py-18 relative overflow-hidden">
       <div className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full pointer-events-none"
         style={{background:'radial-gradient(circle, rgba(234,88,12,0.06) 0%, transparent 70%)'}} />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="text-center sm:mb-2 mb-2 lg:mb-16">
           <div className="section-badge justify-center">
             <span className="w-1.5 h-1.5 rounded-full bg-accent-400" />
             Portfolio
           </div>
-          <h2 className="font-heading font-900 text-[clamp(2rem,4.5vw,3.2rem)] text-white mb-5 leading-tight">
+          <h2 className="font-heading font-900 text-[clamp(1.3rem,4.5vw,3.2rem)] text-white mb-1 sm:mb-1 lg:mb-5 leading-tight">
             Real Work, <span className="text-gradient">Real Results</span>
           </h2>
-          <p className="text-slate-400 text-lg max-w-2xl mx-auto">
+          <p className="text-slate-400 text-sm sm:text-sm lg:text-lg max-w-2xl mx-auto">
             Every project is live, tested, and actively delivering value to our clients.
           </p>
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {projects.map((p, i) => (
-            <a key={p.name} href={p.url} target="_blank" rel="noopener noreferrer"
+            <a key={p.name} 
+            // href={p.url} target="_blank" rel="noopener noreferrer"
               className="group glass-card rounded-2xl overflow-hidden border border-white/5 hover:border-white/12 flex flex-col cursor-pointer">
               {/* Image */}
               <div className="relative h-44 overflow-hidden">
@@ -53,11 +54,11 @@ export default function Portfolio() {
                 <div className={`absolute inset-0 bg-gradient-to-t ${p.color}`} />
 
                 {/* Hover overlay */}
-                <div className="absolute inset-0 bg-primary-600/0 group-hover:bg-primary-600/20 transition-colors duration-300 flex items-center justify-center">
+                {/* <div className="absolute inset-0 bg-primary-600/0 group-hover:bg-primary-600/20 transition-colors duration-300 flex items-center justify-center">
                   <div className="opacity-0 group-hover:opacity-100 transition-all duration-300 transform scale-75 group-hover:scale-100 glass rounded-xl px-4 py-2.5 flex items-center gap-2 text-white font-heading font-700 text-sm">
                     <ExternalLink size={14} /> View Site
                   </div>
-                </div>
+                </div> */}
 
                 {/* Category */}
                 <div className={`absolute top-3 left-3 text-xs font-heading font-700 px-2.5 py-1 rounded-full border ${catColors[p.cat]||'text-slate-400 bg-slate-500/15 border-slate-500/25'}`}>
@@ -69,10 +70,10 @@ export default function Portfolio() {
               <div className="p-4 flex-1 flex flex-col">
                 <h3 className="font-heading font-700 text-white text-sm mb-1.5 group-hover:text-primary-300 transition-colors">{p.name}</h3>
                 <p className="text-slate-500 text-xs leading-relaxed flex-1">{p.desc}</p>
-                <div className="mt-3 flex items-center gap-1.5 text-xs font-heading font-600 text-primary-400">
+                {/* <div className="mt-3 flex items-center gap-1.5 text-xs font-heading font-600 text-primary-400">
                   <ExternalLink size={11} />
                   <span className="truncate">{p.url.replace('https://','').replace('http://','').split('/')[0]}</span>
-                </div>
+                </div> */}
               </div>
             </a>
           ))}

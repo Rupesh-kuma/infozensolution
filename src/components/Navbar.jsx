@@ -38,7 +38,7 @@ export default function Navbar() {
           <div className="flex items-center justify-between h-14">
             {/* Logo */}
             <button onClick={() => goto('home')} className="flex items-center gap-3 group">
-              <img src={logo} alt="logo" className='w-52' />
+              <img src={logo} alt="logo" className='w-20 sm:w-20 lg:w-52' />
               {/* <div className="relative">
                 <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary-500 to-primary-700 flex items-center justify-center shadow-glow-blue group-hover:shadow-lg transition-all duration-300">
                   <Code2 size={18} className="text-white" strokeWidth={2.5} />

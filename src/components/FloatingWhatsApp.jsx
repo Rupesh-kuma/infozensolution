@@ -10,14 +10,14 @@ export default function FloatingWhatsApp() {
   }, []);
 
   return (
-    <div className={`fixed bottom-6 right-6 z-50 flex flex-col items-end gap-3 transition-all duration-500 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6 pointer-events-none'}`}>
+    <div className={`fixed bottom-20 left-6 z-50 flex flex-col items-end gap-3 transition-all duration-500 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6 pointer-events-none'}`}>
       {tip && (
         <div className="glass-card rounded-2xl px-4 py-3 border border-emerald-500/20 max-w-[200px] text-right shadow-xl shadow-black/40">
           <p className="font-heading font-700 text-emerald-400 text-xs mb-0.5">Chat with us!</p>
           <p className="text-slate-400 text-xs">Replies in minutes ⚡</p>
         </div>
       )}
-      <a href="https://wa.me/919876543210?text=Hi!%20I'm%20interested%20in%20getting%20a%20website."
+      <a href="https://wa.me/919661911152?text=Hi!%20I'm%20interested%20in%20getting%20a%20website."
         target="_blank" rel="noopener noreferrer"
         onMouseEnter={() => setTip(true)} onMouseLeave={() => setTip(false)}
         className="relative w-14 h-14 rounded-full bg-[#25D366] hover:bg-[#20c05c] flex items-center justify-center shadow-2xl shadow-emerald-900/50 hover:scale-110 transition-all duration-300"

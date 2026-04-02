@@ -29,20 +29,20 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className="py-10 md:py-18 relative overflow-hidden">
+    <section className="py-4 sm:py-4 md:py-18 relative overflow-hidden">
       <div className="absolute right-0 top-0 w-[500px] h-[500px] rounded-full pointer-events-none"
         style={{background:'radial-gradient(circle, rgba(37,99,235,0.07) 0%, transparent 70%)'}} />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="text-center mb-4 sm:mb-4 lg:mb-16">
           <div className="section-badge justify-center">
             <span className="w-1.5 h-1.5 rounded-full bg-yellow-400" />
             Client Reviews
           </div>
-          <h2 className="font-heading font-900 text-[clamp(2rem,4.5vw,3.2rem)] text-white mb-5 leading-tight">
+          <h2 className="font-heading font-900 text-[clamp(1.3rem,4.5vw,3.2rem)] text-white mb-2 sm:mb-2 lg:mb-5 leading-tight">
             Clients Love <span className="text-gradient">The Results</span>
           </h2>
-          <p className="text-slate-400 text-lg max-w-xl mx-auto">
+          <p className="text-slate-400 text-sm sm:text-sm lg:text-lg max-w-xl mx-auto">
             Don't just take our word for it — here's what real clients say.
           </p>
         </div>
@@ -65,7 +65,7 @@ export default function Testimonials() {
                 <span className="text-xs font-heading font-700 text-white">✨ {t.result}</span>
               </div>
 
-              <p className="text-slate-300 text-[15px] leading-relaxed mb-6 relative z-10">
+              <p className="text-slate-300 text-[14px] sm:text-[14px] lg:text-[15px] leading-relaxed mb-6 relative z-10">
                 "{t.text}"
               </p>
 

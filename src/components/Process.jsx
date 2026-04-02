@@ -9,15 +9,15 @@ export default function Process() {
   return (
     <section className="py-0 md:py-0 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-14">
+        <div className="text-center mb-3 sm:mb-2 lg:mb-14">
           <div className="section-badge justify-center">
             <span className="w-1.5 h-1.5 rounded-full bg-violet-400" />
             How It Works
           </div>
-          <h2 className="font-heading font-900 text-[clamp(2rem,4.5vw,3.2rem)] text-white mb-4 leading-tight">
+          <h2 className="font-heading font-900 text-[clamp(1.4rem,4.5vw,3.2rem)] text-white mb-1 sm:mb-1 lg:mb-4 leading-tight">
             Simple <span className="text-gradient">4-Step</span> Process
           </h2>
-          <p className="text-slate-400 max-w-xl mx-auto">From first message to live website — streamlined and stress-free.</p>
+          <p className="text-slate-400 max-w-sm sm:max-w-sm lg:max-w-xl mx-auto">From first message to live website — streamlined and stress-free.</p>
         </div>
 
         {/* Connector line desktop */}

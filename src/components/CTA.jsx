@@ -19,18 +19,18 @@ export default function CTA() {
           <div className="absolute top-0 left-1/4 w-72 h-72 bg-primary-500/15 rounded-full blur-3xl" />
           <div className="absolute bottom-0 right-1/3 w-48 h-48 bg-accent-500/10 rounded-full blur-3xl" />
 
-          <div className="relative z-10 p-10 md:p-16 max-w-3xl">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-500/20 border border-primary-500/30 mb-8">
+          <div className="relative z-10 p-3 sm:p-3 md:p-16 max-w-3xl">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-500/20 border border-primary-500/30 mb-2 sm:mb-2 lg:mb-8">
               <span className="w-2 h-2 rounded-full bg-primary-400 animate-pulse" />
               <span className="font-heading font-600 text-xs tracking-widest uppercase text-primary-300">Limited Slots This Month</span>
             </div>
 
-            <h2 className="font-heading font-900 text-[clamp(2.2rem,5vw,3.8rem)] text-white leading-tight mb-6">
+            <h2 className="font-heading font-900 text-[clamp(1.3rem,5vw,3.8rem)] text-white leading-tight mb-2 sm:mb-2 lg:mb-6">
               Let's Build Your<br />
               <span className="text-gradient">Website Today</span>
             </h2>
 
-            <p className="text-slate-300 text-lg leading-relaxed mb-10 max-w-xl">
+            <p className="text-slate-300 text-sm sm:text-sm lg:text-lg leading-relaxed mb-3 sm:mb-3 lg:mb-10 max-w-xl">
               Free consultation. Transparent pricing. Fast delivery. 
               Join 50+ businesses growing online with us.
             </p>
@@ -48,7 +48,7 @@ export default function CTA() {
               </a>
             </div>
 
-            <div className="flex flex-wrap gap-6 text-sm text-slate-400">
+            <div className="flex flex-wrap gap-2 sm:gap-2 lg:gap-6 text-sm text-slate-400">
               {['Free Consultation','No Hidden Fees','100% Satisfaction','Fast Delivery'].map(t => (
                 <span key={t} className="flex items-center gap-2">
                   <span className="text-emerald-400 font-bold">✓</span> {t}

@@ -23,18 +23,18 @@ export default function About() {
             <div className="relative">
               {/* Main photo */}
               <div className="rounded-2xl overflow-hidden border border-white/8 shadow-[0_24px_64px_rgba(0,0,0,0.6)]">
-                <img src={DEV_IMG} alt="Developer working" className="w-full h-[480px] object-cover" loading="lazy" />
+                <img src={DEV_IMG} alt="Developer working" className="w-full h-[auto] sm:h-[auto] lg:h-[480px] object-cover" loading="lazy" />
                 <div className="absolute inset-0 bg-gradient-to-t from-navy-900/70 via-navy-900/10 to-transparent" />
               </div>
 
               {/* Experience badge */}
-              <div className="absolute -top-5 -right-5 glass-card rounded-2xl p-5 text-center border-glow shadow-glow-blue w-36">
+              <div className="absolute -top-5 -right-5 glass-card rounded-2xl p-0 lg:p-4 text-center border-glow shadow-glow-blue w-36">
                 <div className="font-heading font-900 text-4xl text-gradient-blue">5+</div>
                 <div className="text-xs text-slate-400 font-heading font-500 mt-1">Years of<br/>Experience</div>
               </div>
 
               {/* Bottom stats */}
-              <div className="absolute -bottom-0 -right-5 glass-card rounded-2xl p-4 flex items-center gap-4 shadow-xl border border-emerald-500/15">
+              <div className="absolute -top-0 sm:-top-0  lg:-bottom-0 -right-5 glass-card rounded-2xl p-4 flex items-center gap-4 shadow-xl border border-emerald-500/15" style={{top:"auto"}}>
                 <div className="w-10 h-10 rounded-xl bg-emerald-500/15 flex items-center justify-center flex-shrink-0">
                   <CheckCircle2 size={20} className="text-emerald-400" />
                 </div>

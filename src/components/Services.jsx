@@ -65,15 +65,15 @@ export default function Services() {
         style={{background:'radial-gradient(circle, rgba(37,99,235,0.06) 0%, transparent 70%)'}} />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="text-center mb-4 sm:mb-4 lg:mb-16">
           <div className="section-badge justify-center">
             <span className="w-1.5 h-1.5 rounded-full bg-primary-400" />
             Our Services
           </div>
-          <h2 className="font-heading font-900 text-[clamp(2rem,4.5vw,3.2rem)] text-white mb-5 leading-tight">
+          <h2 className="font-heading font-900 text-[clamp(1.3rem,4.5vw,3.2rem)] text-white mb-1 sm:mb-1 lg:mb-5 leading-tight">
             Everything You Need to <span className="text-gradient">Win Online</span>
           </h2>
-          <p className="text-slate-400 text-lg max-w-2xl mx-auto">
+          <p className="text-slate-400 text-sm lg:text-lg max-w-2xl mx-auto">
             End-to-end web solutions tailored to your goals — from concept to launch and beyond.
           </p>
         </div>

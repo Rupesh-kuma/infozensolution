@@ -22,15 +22,15 @@ export default function Contact() {
         style={{background:'radial-gradient(circle, rgba(37,99,235,0.07) 0%, transparent 70%)'}} />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="text-center mb-2 sm:mb-2 lg:mb-16">
           <div className="section-badge justify-center">
             <span className="w-1.5 h-1.5 rounded-full bg-accent-400" />
             Get In Touch
           </div>
-          <h2 className="font-heading font-900 text-[clamp(2rem,4.5vw,3.2rem)] text-white mb-5 leading-tight">
+          <h2 className="font-heading font-900 text-[clamp(1.3rem,4.5vw,3.2rem)] text-white sm:mb-2 mb-2 lg:mb-5 leading-tight">
             Let's Build Something <span className="text-gradient">Amazing Together</span>
           </h2>
-          <p className="text-slate-400 text-lg max-w-xl mx-auto">
+          <p className="text-slate-400 text-sm sm:text-sm text-lg max-w-xl mx-auto">
             Drop us a message and we'll get back to you within 24 hours.
           </p>
         </div>
@@ -39,8 +39,8 @@ export default function Contact() {
           {/* Info column */}
           <div className="lg:col-span-2 space-y-4">
             <a href="https://wa.me/919661911152" target="_blank" rel="noopener noreferrer"
-              className="flex items-center gap-4 glass-card rounded-2xl p-5 border border-emerald-500/15 hover:border-emerald-500/35 shine group">
-              <div className="w-12 h-12 rounded-xl bg-emerald-500/12 flex items-center justify-center text-emerald-400 group-hover:scale-110 transition-transform flex-shrink-0">
+              className="flex items-center gap-4 glass-card rounded-2xl p-2 sm:p-2 lg:p-5 border border-emerald-500/15 hover:border-emerald-500/35 shine group">
+              <div className="w-5 sm:w-5 lg:w-12 h-5 sm:h-5 lg:h-12 rounded-xl bg-emerald-500/12 flex items-center justify-center text-emerald-400 group-hover:scale-110 transition-transform flex-shrink-0">
                 <MessageCircle size={22} />
               </div>
               <div>
@@ -51,8 +51,8 @@ export default function Contact() {
             </a>
 
             <a href="mailto:rupesh.kumar.light@gmail.com"
-              className="flex items-center gap-4 glass-card rounded-2xl p-5 border border-primary-500/15 hover:border-primary-500/35 shine group">
-              <div className="w-12 h-12 rounded-xl bg-primary-500/12 flex items-center justify-center text-primary-400 group-hover:scale-110 transition-transform flex-shrink-0">
+              className="flex items-center gap-4 glass-card rounded-2xl p-2 sm:p-2 lg:p-5 border border-primary-500/15 hover:border-primary-500/35 shine group">
+              <div className="w-5 sm:w-5 lg:w-12 h-5 sm:h-5 lg:h-12 rounded-xl bg-primary-500/12 flex items-center justify-center text-primary-400 group-hover:scale-110 transition-transform flex-shrink-0">
                 <Mail size={22} />
               </div>
               <div>
@@ -62,8 +62,8 @@ export default function Contact() {
               </div>
             </a>
 
-            <div className="flex items-center gap-4 glass-card rounded-2xl p-5 border border-white/5 shine">
-              <div className="w-12 h-12 rounded-xl bg-accent-500/12 flex items-center justify-center text-accent-400 flex-shrink-0">
+            <div className="flex items-center gap-4 glass-card rounded-2xl p-2 sm:p-2 lg:p-5 border border-white/5 shine">
+              <div className="w-5 sm:w-5 lg:w-12 h-5 sm:h-5 lg:h-12 rounded-xl bg-accent-500/12 flex items-center justify-center text-accent-400 flex-shrink-0">
                 <MapPin size={22} />
               </div>
               <div>
@@ -86,7 +86,7 @@ export default function Contact() {
 
           {/* Form */}
           <div className="lg:col-span-3">
-            <div className="glass-card rounded-2xl p-8 border border-white/6">
+            <div className="glass-card rounded-2xl p-5 sm:p-5 lg:p-8 border border-white/6">
               {sent ? (
                 <div className="text-center py-12">
                   <div className="w-16 h-16 rounded-full bg-emerald-500/15 border border-emerald-500/30 flex items-center justify-center mx-auto mb-5">
