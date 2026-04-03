@@ -50,14 +50,14 @@ export default function Contact() {
               </div>
             </a>
 
-            <a href="mailto:rupesh.kumar.light@gmail.com"
+            <a href="mailto:infozensolution.light@gmail.com"
               className="flex items-center gap-4 glass-card rounded-2xl p-2 sm:p-2 lg:p-5 border border-primary-500/15 hover:border-primary-500/35 shine group">
               <div className="w-5 sm:w-5 lg:w-12 h-5 sm:h-5 lg:h-12 rounded-xl bg-primary-500/12 flex items-center justify-center text-primary-400 group-hover:scale-110 transition-transform flex-shrink-0">
                 <Mail size={22} />
               </div>
               <div>
                 <div className="text-xs text-slate-500 font-heading font-600 uppercase tracking-wider mb-1">Email</div>
-                <div className="font-heading font-700 text-white">rupesh.kumar.light@gmail.com</div>
+                <div className="font-heading font-700 text-white">infozensolution.light@gmail.com</div>
                 <div className="text-xs text-slate-500 mt-0.5">Response within 24 hours</div>
               </div>
             </a>
@@ -77,8 +77,8 @@ export default function Contact() {
             <div className="glass-card rounded-2xl p-5 border border-white/5">
               <div className="text-xs text-slate-500 font-heading font-700 uppercase tracking-widest mb-4">Follow Us</div>
               <div className="flex gap-3">
-                {[{l:'LinkedIn',c:'bg-blue-600/15 text-blue-400 border-blue-600/20 hover:bg-blue-600/25'},{l:'GitHub',c:'bg-slate-700/15 text-slate-300 border-slate-700/20 hover:bg-slate-700/25'},{l:'Instagram',c:'bg-pink-600/15 text-pink-400 border-pink-600/20 hover:bg-pink-600/25'}].map(s => (
-                  <a key={s.l} href="#" className={`text-xs font-heading font-700 px-3 py-2 rounded-xl border transition-colors ${s.c}`}>{s.l}</a>
+                {[{l:'LinkedIn',c:'bg-blue-600/15 text-blue-400 border-blue-600/20 hover:bg-blue-600/25'},{l:'GitHub',c:'bg-slate-700/15 text-slate-300 border-slate-700/20 hover:bg-slate-700/25'},{l:'Instagram',c:'bg-pink-600/15 text-pink-400 border-pink-600/20 hover:bg-pink-600/25',link:'https://www.instagram.com/infozensolution/'}].map(s => (
+                  <a key={s.l} href={s.link} className={`text-xs font-heading font-700 px-3 py-2 rounded-xl border transition-colors ${s.c}`}>{s.l}</a>
                 ))}
               </div>
             </div>

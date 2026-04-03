@@ -30,7 +30,7 @@ export default function Footer() {
             </p>
             <div className="space-y-2">
               {[
-                {icon:<Mail size={14}/>, val:'rupesh.kumar.light@gmail.com'},
+                {icon:<Mail size={14}/>, val:'infozensolution.light@gmail.com'},
                 {icon:<Phone size={14}/>, val:'+91 96619 11152'},
                 {icon:<MapPin size={14}/>, val:'Pocket G, Sector 10 Housing Board Colony, Faridabad, Haryana 121006'},
               ].map(c => (
