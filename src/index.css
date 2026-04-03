@@ -54,6 +54,10 @@
     border: 1px solid rgba(59,130,246,0.2);
   }
   .glass-card {
+    position: absolute;
+    top: -0rem;
+    width: 200px;
+    left: 10px;
     background: rgba(6,15,30,0.8);
     backdrop-filter: blur(24px);
     border: 1px solid rgba(255,255,255,0.06);
