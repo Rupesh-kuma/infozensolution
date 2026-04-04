@@ -45,7 +45,7 @@ export default function Portfolio() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {projects.map((p, i) => (
             <a key={p.name} 
-            // href={p.url} target="_blank" rel="noopener noreferrer"
+            href={p.url} target="_blank" rel="noopener noreferrer"
               className="group glass-card rounded-2xl overflow-hidden border border-white/5 hover:border-white/12 flex flex-col cursor-pointer">
               {/* Image */}
               <div className="relative h-44 overflow-hidden">
@@ -54,11 +54,11 @@ export default function Portfolio() {
                 <div className={`absolute inset-0 bg-gradient-to-t ${p.color}`} />
 
                 {/* Hover overlay */}
-                {/* <div className="absolute inset-0 bg-primary-600/0 group-hover:bg-primary-600/20 transition-colors duration-300 flex items-center justify-center">
+                <div className="absolute inset-0 bg-primary-600/0 group-hover:bg-primary-600/20 transition-colors duration-300 flex items-center justify-center">
                   <div className="opacity-0 group-hover:opacity-100 transition-all duration-300 transform scale-75 group-hover:scale-100 glass rounded-xl px-4 py-2.5 flex items-center gap-2 text-white font-heading font-700 text-sm">
                     <ExternalLink size={14} /> View Site
                   </div>
-                </div> */}
+                </div> 
 
                 {/* Category */}
                 <div className={`absolute top-3 left-3 text-xs font-heading font-700 px-2.5 py-1 rounded-full border ${catColors[p.cat]||'text-slate-400 bg-slate-500/15 border-slate-500/25'}`}>
@@ -70,10 +70,10 @@ export default function Portfolio() {
               <div className="p-4 flex-1 flex flex-col">
                 <h3 className="font-heading font-700 text-white text-sm mb-1.5 group-hover:text-primary-300 transition-colors">{p.name}</h3>
                 <p className="text-slate-500 text-xs leading-relaxed flex-1">{p.desc}</p>
-                {/* <div className="mt-3 flex items-center gap-1.5 text-xs font-heading font-600 text-primary-400">
+                 <div className="mt-3 flex items-center gap-1.5 text-xs font-heading font-600 text-primary-400">
                   <ExternalLink size={11} />
                   <span className="truncate">{p.url.replace('https://','').replace('http://','').split('/')[0]}</span>
-                </div> */}
+                </div>
               </div>
             </a>
           ))}
